@@ -1,4 +1,15 @@
 ```diff
+- Updates for SMARTS Support
+- In current directory, git clone https://github.com/huawei-noah/SMARTS
+- Follow the instrctions to install SMARTS and complie maps: https://github.com/huawei-noah/SMARTS
+- Then run the trainning command with SMARTS env config:
+```
+
+```shell
+python3 src/main.py --config=qmix --env-config=smarts with env_args.scenarios=./SMARTS/scenarios/intersections/2lane 
+```
+
+```diff
 - Please pay attention to the version of SC2 you are using for your experiments. 
 - Performance is *not* always comparable between versions. 
 - The results in SMAC (https://arxiv.org/abs/1902.04043) use SC2.4.6.2.69232 not SC2.4.10.
